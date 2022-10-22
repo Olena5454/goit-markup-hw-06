@@ -462,6 +462,25 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form">
+          <form class="form-subscribe">
+            <p class="subscribe-title">Підпишіться на розсилку</p>
+            <div class="subscribe">
+              <input
+                type="email"
+                name="email"
+                class="subscribe-email"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="button-submit subscribe-button">
+                Підписатися <span><svg class="button-icon-plane" width="24" height="24">
+                  <use
+                    href="./images/symbol-defs.svg#icon-plane"
+                  ></use></svg></span>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -519,23 +538,27 @@
             class="modal-comment"
             placeholder="Введіть текст"
           ></textarea>
-          <input
-            type="checkbox"
-            class="modal-input terms"
-            name="terms"
-            value="true"
-            id="terms"
-          />
-          <label for="terms" class="modal-terms"
-            ><span
-              ><svg class="modal-input-icon" width="16" height="15">
-                <use
-                  href="./images/symbol-defs.svg#icon-check"
-                ></use></svg></span
-            >Погоджуюся з розсилкою та приймаю
-             <a class="modal-terms-link" href="#"> Умови договору</a></label
-          >
-          <button type="submit" class="botton-submit">Відправити</button>
+
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              class="input-check terms visually-hidden"
+              name="terms"
+              value="true"
+              id="terms"
+            />
+            <label for="terms" class="modal-terms"
+              ><span
+                ><svg class="icon-terms" width="16" height="15">
+                  <use
+                    href="./images/symbol-defs.svg#icon-check"
+                  ></use></svg></span
+              >Погоджуюся з розсилкою та приймаю &nbsp;
+              <a class="modal-terms-link" href="#"> Умови договору</a></label
+            >
+          </div>
+
+          <button type="submit" class="button-submit">Відправити</button>
         </form>
       </div>
     </div>
